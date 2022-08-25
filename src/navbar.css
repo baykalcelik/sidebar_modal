@@ -1,0 +1,126 @@
+
+
+.navbarCover{
+    margin:0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    height: 100vh;
+    width: 25rem;
+    transition:all 0.5s;
+
+    position:absolute;
+    z-index: 99;
+    left:-25rem;
+
+}
+
+.gizle{
+    left: -25rem;
+}
+
+.goster{
+    left: 0%;
+}
+
+
+.logoArea{
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    padding: 1.2rem;
+}
+
+.logoimg{
+    width: 12rem;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.kapatbtn{
+    font-size: 1.7rem;
+    color:rgb(207, 3, 3);
+    transition: all 0.3s;
+
+}
+
+.kapatbtn:hover{
+    font-size: 1.7rem;
+    color:rgb(247, 68, 68);
+    cursor: pointer;
+
+}
+
+.menuArea{
+    height: auto;
+    width:100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.menulink{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color:rgb(72,100,127);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    width: 100%;
+    
+
+}
+
+.iconmenu{
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.menulink:hover{
+    background-color: rgb(241,248,245);
+
+}
+
+
+.socialLinksArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+
+}
+
+.sociallinkicon{
+    color:rgb(73,166,233);
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.sociallinkicon:hover{
+    color:rgb(3, 45, 75);
+}
+
+
+@media all and (max-width:700px){
+    
+.navbarCover{
+    width: 100%;
+
+}
+}

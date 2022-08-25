@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './Navbar';
+import Modal from './Modal';
+import { HiMenu } from 'react-icons/hi';
+import { useState } from 'react';
 
 function App() {
+
+  const [goster, setGoster] = useState("");
+
+  const [modalgoster, setModalgoster] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Navbar goster={goster} setGoster={setGoster}/>
+
+        <div className='hamburgermenu' onClick={()=>{
+            setGoster("goster");
+        }}>
+          <HiMenu className='animbtn'/>
+        </div>
+
+        <button className='showmodal' onClick={()=>{setModalgoster(true);}}>Show Modal</button>
+        {modalgoster ? <Modal setModalgoster={setModalgoster}/> : ""}
+
+
     </div>
   );
 }

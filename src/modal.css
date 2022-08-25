@@ -1,0 +1,52 @@
+
+
+.modalCover{
+    position:absolute;
+    z-index: 100;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.modalPanel{
+    width: 39rem;
+    height: 11.8rem;
+    background-color: white;
+    border-radius: 5px;
+    padding:1.2rem;
+
+
+}
+
+.micover{
+    width:100%;
+    display: block;
+
+    text-align: end;
+    user-select: none;
+}
+
+.modalClose{
+    color:rgb(182, 48, 48);
+    font-size: 2rem;
+    cursor:pointer;
+    user-select: none;
+    /* text-align: end; */
+    /* width:100%; */
+
+}
+
+.modalText{
+    width:100%;
+    text-align: center;
+    color:rgb(16, 16, 71);
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin-top:1rem;
+    user-select: none;
+}
